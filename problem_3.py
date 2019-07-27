@@ -16,9 +16,10 @@ Computations:
 """
 
 def main():
+	print("Calculate the largest prime factor of the number")
 	number = int(input("Enter the number: "))
 	prime_factor = get_prime_factor(number)
-	print(prime_factor)
+	print("Largest prime factor of {} is {}".format(number, prime_factor))
 
 def get_prime_factor(number):
 	prime_factor = 0
