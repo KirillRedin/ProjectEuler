@@ -22,19 +22,22 @@ def main():
 	print("Largest prime factor of {} is {}".format(number, prime_factor))
 
 def get_prime_factor(number):
-	prime_factor = 0
-	factor = 2
-
-	while number > 1:
+	# We can exclude all even factors and then travers factors with step = 2
+	if number % 2 == 0:
+		prime_factor = 2
+		while number % 2 == 0:
+			number /= 2
+	else:
+		prime_factor = 1
+		
+	factor = 3	
+	while number > 1 :
 		if number % factor == 0:
-			number /= factor			
-			if prime_factor < factor:
-				prime_factor = factor
-			factor = 2
+			number /= factor
+			prime_factor = factor
 		else:
-			factor += 1
+			factor += 2
 	return prime_factor
-
 
 if __name__ == '__main__':
 	main()
