@@ -4,9 +4,11 @@ numbers which does not exceed 4 000 000.
 """
 
 def main():
+	print("Calculate the sum of all even Fibonacci numbers in a range")
 	limit = int(input("Enter Fibonacci sequence limit: "))
 	sequence = get_fibonacci_sequence(limit)
-	print(get_sum_of_even(sequence))
+	sum = get_sum_of_even(sequence)
+	print("Result is: ", sum)
 
 def get_fibonacci_sequence(limit):
 	sequence = [1, 2]
