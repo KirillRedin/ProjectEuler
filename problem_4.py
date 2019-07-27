@@ -13,10 +13,13 @@ Computations:
 """
 
 def main():
+	print("Find largest palindrome made from the product of two numbers "\
+		"in a range")
 	largest_num = int(input("Enter largest number: "))
 	lowest_num = int(input("Enter lowest number: "))
 	largest_palindrome = get_largest_palindrome(largest_num, lowest_num)
-	print("{} * {} = {}".format(largest_palindrome[0], largest_palindrome[1], largest_palindrome[2]))
+	print("{} * {} = {}".format(largest_palindrome[0], largest_palindrome[1],
+		largest_palindrome[2]))
 
 def get_largest_palindrome(largest_num, lowest_num):
 	largest_palindrome = 0
