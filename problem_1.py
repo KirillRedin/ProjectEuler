@@ -4,7 +4,7 @@ of 3 or 5 below 1000
 """
 
 def main():
-	print("Calculate the sum of all the multiplies of 3 or 5 in an interval")
+	print("Calculate the sum of all the multiplies of 3 or 5 in a range")
 	largest_num = int(input("Enter the largest number: "))
 	lowest_num = int(input("Enter the lowest number: "))
 	sum = count_multiplies_sum(largest_num, lowest_num)
